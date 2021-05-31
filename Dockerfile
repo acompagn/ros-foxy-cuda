@@ -3,10 +3,6 @@
 FROM osrf/ros:foxy-desktop
 
 
-ARG USER_ID
-ARG GROUP_ID
-ARG USERNAME
-
 #using cache for apt and pip installs to speedup building image
 ENV PIP_CACHE_DIR=/var/cache/buildkit/pip
 RUN mkdir -p $PIP_CACHE_DIR
